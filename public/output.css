@@ -350,7 +350,7 @@ legend {
 ol,
 ul,
 menu {
-  list-style: none;
+  list-style: square;
   margin: 0;
   padding: 0;
 }
@@ -552,16 +552,32 @@ video {
   position: relative;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-\[0\.5px\] {
+  left: 0.5px;
+}
+
 .right-0 {
   right: 0px;
 }
 
-.top-0 {
-  top: 0px;
-}
-
 .right-5 {
   right: 1.25rem;
+}
+
+.z-\[-1\] {
+  z-index: -1;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-span-full {
+  grid-column: 1 / -1;
 }
 
 .mb-2 {
@@ -588,8 +604,20 @@ video {
   margin-top: 1rem;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .w-auto {
@@ -604,16 +632,6 @@ video {
   flex-shrink: 0;
 }
 
-.-translate-y-1\/3 {
-  --tw-translate-y: -33.333333%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-y-9 {
-  --tw-translate-y: -2.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .-translate-y-8 {
   --tw-translate-y: -2rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -621,6 +639,10 @@ video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -699,6 +721,14 @@ video {
   gap: 1.5rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -758,6 +788,11 @@ video {
   background-color: rgb(246 246 244 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FFC8A3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 200 163 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#FFE7D7\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 231 215 / var(--tw-bg-opacity));
@@ -782,6 +817,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-0 {
@@ -829,6 +868,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -843,6 +887,14 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .text-center {
@@ -985,6 +1037,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#\] {
+  color: #;
 }
 
 .underline {
